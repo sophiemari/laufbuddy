@@ -1,0 +1,19 @@
+CREATE TABLE users(
+  id SERIAL PRIMARY KEY,
+  vorname VARCHAR(30) NOT NULL,
+  nachname VARCHAR(30) NOT NULL,
+  geburtsdatum DATE NOT NULL,
+  geschlecht VARCHAR(10) NOT NULL,
+  email VARCHAR(70) NOT NULL,
+  passwort VARCHAR(100) NOT NULL,
+  trainingsgrad VARCHAR(30) NOT NULL,
+  profilbild VARCHAR(50) DEFAULT 'pinguin.jpg',
+  info VARCHAR(200) NOT NULL,
+  km INTEGER,
+  datum DATE,
+  uhrzeit TIME,
+  bevgeschlecht VARCHAR(10),
+  bevalter INTEGER,
+  bevtrainingsgrad VARCHAR(30),
+  stadtteil VARCHAR(50)
+);
